@@ -129,10 +129,10 @@ dataset_base = Config({
 })
 wildlife_dataset = dataset_base.copy({
     'name': 'WildLife Conservation',
-    'train_info': '/content/drive/MyDrive/dataset_v5/train/annotations.json',
-    'train_images': '/content/drive/MyDrive/dataset_v5/train/images',
-    'valid_info': '/content/drive/MyDrive/dataset_v5/val/annotations.json',
-    'valid_images': '/content/drive/MyDrive/dataset_v5/val/images',
+    'train_info': 'dataset_v5/train/annotations.json',
+    'train_images': 'dataset_v5/train/images',
+    'valid_info': 'dataset_v5/val/annotations.json',
+    'valid_images': 'dataset_v5/val/images',
     'class_names': ('ostrich', 'oryx', 'asg', 'amg'),
     'label_map': {1:1 , 2:2, 3:3, 4:4}
   })
@@ -140,8 +140,8 @@ wildlife_dataset = dataset_base.copy({
 wildlife_valdev_dataset = dataset_base.copy({
     'name': 'WildLife Conservation Val-Dev',
 
-    'valid_info': '/content/drive/MyDrive/dataset_v5/val/annotations.json',
-    'valid_images': '/content/drive/MyDrive/dataset_v5/val/images',
+    'valid_info': 'dataset_v5/val/annotations.json',
+    'valid_images': 'dataset_v5/val/images',
     'has_gt': False,
 
     'label_map': {1:1 , 2:2, 3:3, 4:4}
